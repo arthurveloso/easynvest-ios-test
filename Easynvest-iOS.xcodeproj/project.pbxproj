@@ -119,13 +119,13 @@
 		673B2A13233E9D95003A6FE3 /* Easynvest-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				67F08FC5234051F0007BDFFB /* Controller */,
-				67F08FC4234051E9007BDFFB /* View */,
 				67F08FC3234051DF007BDFFB /* Model */,
+				67F08FC4234051E9007BDFFB /* View */,
+				67F08FC5234051F0007BDFFB /* Controller */,
 				67684ABD2340699100E26E72 /* Utils */,
-				67DD0E94234180C90092A06F /* Info.plist */,
 				67DD0E8923417E020092A06F /* Resources */,
 				673B2A14233E9D95003A6FE3 /* AppDelegate.swift */,
+				67DD0E94234180C90092A06F /* Info.plist */,
 			);
 			path = "Easynvest-iOS";
 			sourceTree = "<group>";

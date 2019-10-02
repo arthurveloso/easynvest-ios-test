@@ -104,7 +104,7 @@ class SimulationFormViewController: UIViewController {
         investedAmount.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
         cdiRate.addTarget(self, action: #selector(editingChanged(_:)), for: .editingChanged)
     }
-    
+
     func setAccessibilityIdentifiers() {
         investedAmount.accessibilityIdentifier = "amount"
         investmentDueDate.accessibilityIdentifier = "date"
