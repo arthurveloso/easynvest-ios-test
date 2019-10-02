@@ -10,32 +10,29 @@ import XCTest
 
 class EasynvestiOSUITests: XCTestCase {
 
+    var app: XCUIApplication!
+
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        super.setUp()
+        app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        testSimulationFlow()
     }
 
-    func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
+    func testSimulationFlow() {
+        let amountTextField = app.textFields["amount"]
+        amountTextField.tap()
+        amountTextField.typeText("2000")
+
+        let dateTextField = app.textFields["date"]
+        dateTextField.tap()
+        dateTextField.typeText("29062023")
+
+        let cdiRateTextField = app.textFields["rate"]
+        cdiRateTextField.tap()
+        cdiRateTextField.typeText("100")
+
+        let simulateButton = app.buttons["simulate"]
+        simulateButton.tap()
     }
 }

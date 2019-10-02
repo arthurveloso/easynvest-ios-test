@@ -15,7 +15,9 @@
 		673B2A2C233E9D97003A6FE3 /* Easynvest_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B2A2B233E9D97003A6FE3 /* Easynvest_iOSTests.swift */; };
 		673B2A37233E9D97003A6FE3 /* Easynvest_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B2A36233E9D97003A6FE3 /* Easynvest_iOSUITests.swift */; };
 		67684ABC23405E8800E26E72 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67684ABB23405E8800E26E72 /* RequestManager.swift */; };
-		67684ABF234069A400E26E72 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67684ABE234069A400E26E72 /* String+Utils.swift */; };
+		6785932B234250CC003052A5 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6785932A234250CC003052A5 /* UIViewController+Utils.swift */; };
+		67D046FA2344163E0008FFCD /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D046F92344163E0008FFCD /* Form.swift */; };
+		67D046FC2344176B0008FFCD /* UIButton+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D046FB2344176B0008FFCD /* UIButton+Utils.swift */; };
 		67DD0E8F23417E180092A06F /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67DD0E8A23417E180092A06F /* SF-Pro-Text-Medium.otf */; };
 		67DD0E9023417E180092A06F /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67DD0E8B23417E180092A06F /* SF-Pro-Text-Regular.otf */; };
 		67DD0E9123417E180092A06F /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67DD0E8C23417E180092A06F /* SF-Pro-Text-Thin.otf */; };
@@ -56,7 +58,9 @@
 		673B2A36233E9D97003A6FE3 /* Easynvest_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easynvest_iOSUITests.swift; sourceTree = "<group>"; };
 		673B2A38233E9D97003A6FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67684ABB23405E8800E26E72 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
-		67684ABE234069A400E26E72 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		6785932A234250CC003052A5 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		67D046F92344163E0008FFCD /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		67D046FB2344176B0008FFCD /* UIButton+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Utils.swift"; sourceTree = "<group>"; };
 		67DD0E8A23417E180092A06F /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		67DD0E8B23417E180092A06F /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		67DD0E8C23417E180092A06F /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
@@ -147,7 +151,8 @@
 		67684ABD2340699100E26E72 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				67684ABE234069A400E26E72 /* String+Utils.swift */,
+				6785932A234250CC003052A5 /* UIViewController+Utils.swift */,
+				67D046FB2344176B0008FFCD /* UIButton+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			children = (
 				67F08FC623405219007BDFFB /* SimulationResult.swift */,
 				67684ABB23405E8800E26E72 /* RequestManager.swift */,
+				67D046F92344163E0008FFCD /* Form.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 				TargetAttributes = {
 					673B2A10233E9D95003A6FE3 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					673B2A26233E9D97003A6FE3 = {
 						CreatedOnToolsVersion = 11.0;
@@ -349,9 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D046FA2344163E0008FFCD /* Form.swift in Sources */,
 				67684ABC23405E8800E26E72 /* RequestManager.swift in Sources */,
 				673B2A19233E9D95003A6FE3 /* SimulationFormViewController.swift in Sources */,
-				67684ABF234069A400E26E72 /* String+Utils.swift in Sources */,
+				6785932B234250CC003052A5 /* UIViewController+Utils.swift in Sources */,
+				67D046FC2344176B0008FFCD /* UIButton+Utils.swift in Sources */,
 				67F08FC723405219007BDFFB /* SimulationResult.swift in Sources */,
 				67F08FC2233F215D007BDFFB /* SimulationResultsViewController.swift in Sources */,
 				673B2A15233E9D95003A6FE3 /* AppDelegate.swift in Sources */,
@@ -528,16 +537,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JBBFZ5VX6;
+				DEVELOPMENT_TEAM = YB4WRZF6W4;
 				INFOPLIST_FILE = "Easynvest-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arthurmelo.Easynvest-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arthurdemelo.Easynvest-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -547,16 +556,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JBBFZ5VX6;
+				DEVELOPMENT_TEAM = YB4WRZF6W4;
 				INFOPLIST_FILE = "Easynvest-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arthurmelo.Easynvest-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arthurdemelo.Easynvest-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

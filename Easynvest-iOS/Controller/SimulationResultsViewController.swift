@@ -53,18 +53,16 @@ class SimulationResultsViewController: UIViewController {
     }
 
     func styleResult(value: String) -> NSAttributedString {
-        let attrs1 = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14),
-                      NSAttributedStringKey.foregroundColor: UIColor.lightGray]
+        let attrs1 = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14),
+                      NSAttributedString.Key.foregroundColor: UIColor.lightGray]
 
-        let attrs2 = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14),
-                      NSAttributedStringKey.foregroundColor: UIColor(red: 98/255,
-                                                                     green: 213/255,
-                                                                     blue: 214/255,
-                                                                     alpha: 1.0)]
+        let attrs2 = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14),
+                      NSAttributedString.Key.foregroundColor: UIColor(named: "easyCyan")]
 
         let attributedString1 = NSMutableAttributedString(string: "Rendimento total de ", attributes: attrs1)
 
-        let attributedString2 = NSMutableAttributedString(string: value, attributes: attrs2)
+        let attributedString2 = NSMutableAttributedString(string: value, attributes: attrs2 as
+            [NSAttributedString.Key: Any])
 
         attributedString1.append(attributedString2)
 
