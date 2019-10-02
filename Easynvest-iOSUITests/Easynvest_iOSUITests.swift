@@ -16,7 +16,6 @@ class EasynvestiOSUITests: XCTestCase {
         super.setUp()
         app = XCUIApplication()
         app.launch()
-        testSimulationFlow()
     }
 
     func testSimulationFlow() {
@@ -33,6 +32,7 @@ class EasynvestiOSUITests: XCTestCase {
         cdiRateTextField.typeText("100")
 
         let simulateButton = app.buttons["simulate"]
+        app.tap()
         simulateButton.tap()
     }
 }
